@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { router, useLocalSearchParams } from 'expo-router'
+import { router, Stack, useLocalSearchParams } from 'expo-router'
 import useFetch from '@/services/useFetch';
 import { fetchMovieDetails } from '@/services/api';
 import { icons } from '@/constants/icons';
@@ -27,6 +27,8 @@ const MovieDetails = () => {
   const { data: movie, loading} = useFetch(() => fetchMovieDetails(id as string));
 
   return (
+    <>
+    <Stack.Screen options={{headerShown: false}}/>
     <View className='flex-1 bg-primary'>
       <ScrollView 
         contentContainerStyle = {{
@@ -74,6 +76,7 @@ const MovieDetails = () => {
         <Text className='text-white font-semibold text-base'>Go back</Text>
       </TouchableOpacity>
     </View>
+    </>
   )
 }
 
