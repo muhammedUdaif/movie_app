@@ -1,11 +1,11 @@
-import { View, Text, Image, FlatList, ActivityIndicator } from 'react-native'
-import React, { useEffect, useState } from 'react'
-import { images } from '@/constants/images'
-import MovieCard from '@/components/MovieCard'
-import useFetch from '@/services/useFetch'
-import { fetchMovies } from '@/services/api'
 import { icons } from '@/constants/icons'
+import { images } from '@/constants/images'
+import { fetchMovies } from '@/services/api'
+import React, { useEffect, useState } from 'react'
+import MovieCard from '@/components/MovieCard'
 import SearchBar from '@/components/SearchBar'
+import useFetch from '@/services/useFetch'
+import { View, Text, Image, FlatList, ActivityIndicator } from 'react-native'
 
 const search = () => {
 

@@ -1,6 +1,6 @@
 import { View, Text, Image } from 'react-native'
-import React from 'react'
 import { icons } from '@/constants/icons'
+import React from 'react'
 
 const profile = () => {
   return (

@@ -1,7 +1,7 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native'
-import React from 'react'
-import { Link } from 'expo-router'
 import { icons } from '@/constants/icons'
+import { Link } from 'expo-router'
+import React from 'react'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 
 const MovieCard = ({id, poster_path, title, vote_average, release_date}: Movie) => {
   return (
