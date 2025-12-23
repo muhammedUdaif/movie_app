@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Movie_app",
-    "slug": "Movie_app",
+    "name": "Movie App",
+    "slug": "movieapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.muhammmedudaif.movieapp"
     },
     "web": {
       "output": "static",
@@ -43,6 +44,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "64d38ad6-69d6-4d1d-98d2-475bf88669c4"
+      }
     }
   }
 }
